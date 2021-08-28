@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* p{
+    font-weight:  300;
+    color: #111;
+}
+
+
+.titletext {
+    color: #2b2727e7;
+    font-size: 6em;
+    font-weight: 400;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section{
+    padding: 100px;
+}
+
+.features{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(gallery.jpg);
+    background-size: cover;
+    padding: 100px;
+}
+
+.features-img .imgbox {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+.features-img .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+   width: 50%;
+   padding-bottom: 50px;
+}
+
+.container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+    font-weight: 100;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .box .phones{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .box .phones img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+    flex-direction: column;
+    }
+    .container .box .phones{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 769px){
+
+.container .heading{
+    width: 100%;
+ }
+ 
+ .container .heading h3{
+     font-size: 1em;
+ }
+}

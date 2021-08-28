@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One plus store</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Mobi World</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#headers">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+        </ul>
+    </header>
+    <section class="headers" id="headers">
+        <div class="content">
+            <img src="logo.png">
+            <h2>OnePlus Nord 2</h2>
+            <p>
+                50 MP AI triple camera + OIS
+                A big lit sensorSony IMX766 sensor
+                Warp speed chargingWarp Charge 65
+                An AI-powered brainMediaTek Dimensity 1200-AI Chipset
+                Breathlessly smooth OSOxygenOS 11.3
+                So good it Hertz6.43” 90Hz fluid AMOLED display
+                Feel the noiseDual speakers + Haptics 2.0
+                Fast downloads for daysWi-Fi 6 + 5G ready
+            </p>
+            <a href="https://www.amazon.in/OnePlus-Nord-Sierra-128GB-Storage/dp/B097RDVDL2/ref=asc_df_B097RDVDL2/?tag=googleshopdes-21&linkCode=df0&hvadid=397079102534&hvpos=&hvnetw=g&hvrand=16550183514293924256&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9299008&hvtargid=pla-1395700899015&psc=1&ext_vrnc=hi"
+                class="btn">Buy Now</a>
+        </div>
+    </section>
+
+    <section class="features" id="about">
+        <div class="title">
+            <h2 class="titletext">About This Set</h2>
+            <p>
+                These are your signs to buy OnePlus NORD 2
+            </p>
+        </div>
+        <div class="content">
+            <div class="title">
+                <a href="about.html" class="btn">Know More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="title">
+            <h2 class="titletext">Features</h2>
+            <p>
+                OnePlus Nord 2 is basically the best android phone you could ask for. It has every feature
+                that you need, even some new which makes it for breathtaking. Here are some of them.
+            </p>
+        </div>
+        <div class="content">
+            <!-- <div class="imgbox">
+                    <img src="img2.jpg">
+                </div> -->
+            <div class="title">
+                <a href="features.html" class="btn">Features</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titletext">Contacts</h2>
+            <p>
+                You can contact me if you need any more information.
+                I will try to answer your queries.<br>
+            </p>
+            <div class="content">
+                <div class="title">
+                    <a href="contact.html" class="btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="title">
+            <h2 class="titletext">Gallery</h2>
+            <p>
+                Here are some pictures of OnePlus for you.
+
+            </p>
+            <div class="content">
+                <div class="title">
+                    <a href="gallery.html" class="btn">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

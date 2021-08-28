@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight:  800;
+    color: #111;
+}
+
+.headers{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(bg.jpg);
+    background-size: cover;
+    padding: 100px;
+}
+
+.headers .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.headers .content h2{
+    font-size: 5em;
+    color: #111;
+}
+
+.headers .content p{
+    font-size: 1em;
+    color: #111;
+}
+
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #fa0626e7;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    letter-spacing: 5px;
+}
+
+header{
+    position:  fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding-bottom: 100px;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); 
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo{
+    color: #fa0626e7;
+}
+
+header .logo span{
+    color: #fa0626e7;
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 290;
+}
+
+header.sticky .navigation li a{
+    color: #fa0626e7;
+}
+
+/* section{
+    padding: 100px;
+} */
+
+.about-row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.about-row .about-col{
+    position: relative;
+    width: 48%;
+}
+
+.titletext {
+    color: #fa0626e7;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+/* .about-row .about-col .imgbox{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+} */
+
+.about-row .about-col .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.content .imgbox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.content .imgbox .img{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.features, .contact, .gallery{
+    padding: 0px 100px 100px 100px;
+}
+
+@media (max-width: 991px){
+    header, 
+    header.sticky{
+        padding: 10px 20px;
+    }
+
+    header .navigation{
+        display: none;
+    }
+    
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+
+    header .navigation li a{
+        color: #fa0626e7;
+        font-size: 1.6em;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    .about-row, .features, .contact, .gallery{
+        padding: 21px 22px 61px 22px;
+   }
+}
